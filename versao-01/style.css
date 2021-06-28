@@ -1,0 +1,162 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Escolar';
+    src: url(fontes/TheStudentsTeacher-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destque: 'Escolar', cursive;
+
+    --corbackbotao: #ebebeb;
+    --corborder: #58355e;
+    --corh1:#199CA4;
+    --corback: #d9cef5bb;
+}
+
+body{
+    background-color:var(--corback);
+}
+header {
+    
+    text-align: center;
+    margin: auto;
+    font-family:var(--font-destque);
+    font-size: 2.5em;
+    height: 180px;
+    width: auto;
+    /*border: solid 1px black;*/
+    
+}
+
+header  h1 {
+    color: var(--corh1);
+    
+    
+    
+}
+
+section{
+    display:inline-block;
+    border: 1px solid #58355e56;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.87);
+    box-shadow: -3px 4px 17px rgba(0, 0, 0, 0.26) ;
+    border-radius: 8px;
+    
+}
+
+section h2 {
+    text-align: center;
+}
+section#cadGab {
+    margin: 0px 90px 0px 220px;
+    vertical-align: top;
+}
+
+section#cadAl {
+    margin: 0px 220px 0px 90px;
+}
+section#cadGab > input {
+    background-color:var(--corbackbotao);
+    border: solid 2px var(--corborder);
+    margin: 0px 4px 9px 8px;
+    width: 60px;
+    height: 19px;
+    border-radius: 4px;
+}
+
+section#cadAl > input {
+    background-color:var(--corbackbotao);
+    border: solid 2px var(--corborder);
+    margin: 0px 4px 9px 8px;
+    width: 91px;
+    height: 19px;
+    border-radius: 4px;
+}
+
+section.aluno {
+    width: 104px;
+}
+
+button#salvar{
+    font-family: var(--font-padrao);
+    font-size: .8em;
+    color: var(--corbackbotao);
+    font-weight: bolder;
+    background-color: #6d597a;
+    border-color: var(--corborder);
+    margin: -8px 100px 10px 100px ;
+    width: 100px;
+    height: 38px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.24);
+}
+
+button#salvar:hover{
+    background: #cba4c39c;
+    color: rgb(63, 62, 62);
+}
+
+button#aluno  {
+    font-family: var(--font-padrao);
+    font-size: .8em;
+    color: var(--corbackbotao);
+    font-weight: bolder;
+    background-color: #6d597a;
+    border-color: var(--corborder);
+    margin: 8px 100px 10px 100px ;
+    width: 100px;
+    height: 38px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.24);
+    
+}
+
+button#aluno:hover{
+    background: #cba4c39c;
+    color: rgb(63, 62, 62);
+}
+
+button#resposta  {
+    font-family: var(--font-padrao);
+    font-size: .8em;
+    color: var(--corbackbotao);
+    font-weight: bolder;
+    background-color: #6d597a;
+    border-color: var(--corborder);
+    margin: -8px 100px 10px 100px ;
+    width: 100px;
+    height: 38px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.24);
+    
+}
+
+button#resposta:hover{
+    background: #cba4c39c;
+    color: rgb(63, 62, 62);
+}
+
+div#res {
+    
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    color: rgba(0, 0, 0, 0.87);
+    width: 400px;
+    margin: 20px 500px;
+}
+
+footer{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    color: var(--corbackbotao);
+    background-color: var(--corh1);
+    
+}

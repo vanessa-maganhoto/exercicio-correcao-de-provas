@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção de provas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Correção de provas</h1>
+    </header>
+
+    <main>
+        <section>
+            <label for="">Número de questões</label>
+            <input type="number" name="" id="nQuestoes">
+            <button onclick="configuraQuestoes()">ok</button>
+        </section>
+
+        <section id="cadGab">
+            <h2>Cadastro de gabarito</h2>
+            <div id="formGabarito">
+                
+            </div>
+            
+				 <br> <br> <br>
+				<button id="salvar" onclick="cadastrar()" >Cadastrar</button> <br>
+		  </section>
+        
+        <section id="cadAl">
+            <h2>Cadastro de alunos</h2>
+            <label for="txta">Nome:</label>
+            <input id="nomeAluno" type="text"> <br>
+            <div id="formRespostas"></div>
+            
+            <button id="aluno" onclick="inserir()"> Inserir</button> <br><br>
+            <button id="resposta" onclick="calcular()">Gerar resultado</button> <br><br>
+		  </section>
+
+		  <div id="res">
+			  resposta
+		  </div>
+
+        
+    </main>
+    <footer>Ciclo de mentoria da PodCodar</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

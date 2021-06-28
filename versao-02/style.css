@@ -1,0 +1,85 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Escolar';
+    src: url(fontes/TheStudentsTeacher-Regular.ttf) format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --font-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --font-destque: 'Escolar', cursive;
+
+    --corbackbotao: #ebebeb;
+    --corborder: #58355e;
+    --corh1:#199CA4;
+    --corback: #d9cef5c0;
+}
+
+body{
+    background-color:var(--corback);
+}
+header {
+    
+    text-align: center;
+    margin: auto;
+    font-family:var(--font-destque);
+    font-size: 2.5em;
+    height: 180px;
+    width: auto;
+    /*border: solid 1px black;*/
+    
+}
+
+header > h1 {
+    color: var(--corh1);
+    margin: 40px auto;
+    
+}
+
+main{
+    margin: 10px auto 30px auto;
+    border: solid 1px black;
+    padding: 10px;
+}
+section{
+    display:inline-block;
+    border: 1px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1em;
+    
+    /*text-align: center;
+    margin-top: 50px;
+    height: 400px;
+    width: 300px;*/
+    
+}
+/*section#cadGab > h2 {
+    margin: 0px;
+}*/
+
+section#cadGab {
+    margin: 0px 150px;
+    vertical-align: top;
+}
+
+section#cadAl {
+    margin: 0px 150px;
+}
+section#cadGab > div > input {
+    background-color:var(--corbackbotao);
+    border: solid 2px var(--corborder);
+}
+
+section#cadAl > div > input {
+    background-color:var(--corbackbotao);
+    border: solid 2px var(--corborder);
+}
+
+section#cadAl > h2 {
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}

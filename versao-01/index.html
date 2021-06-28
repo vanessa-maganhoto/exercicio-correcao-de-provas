@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Correção de provas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Correção de provas</h1>
+    </header>
+
+    <main>
+        <section id="cadGab">
+            <h2>Cadastro de gabarito</h2>
+            
+				<label for="txtp"> Questão 1:</label>
+				<input id="gab1" type="text"> <br>
+				<label for="txtp"> Questão 2:</label>
+				<input id="gab2" type="text"> <br>
+				<label for="txtp"> Questão 3:</label>
+				<input id="gab3"type="text"> <br>
+				<label for="txtp"> Questão 4:</label>
+				<input id="gab4"type="text"> <br>
+				<label for="txtp" > Questão 5:</label>
+				<input id="gab5" type="text"> <br> <br> <br>
+				<button id="salvar" onclick="cadastrar()" >Cadastrar</button> <br><br>
+		  </section>
+        
+        <section id="cadAl">
+            <h2>Cadastro de alunos</h2>
+        
+            <label for="txta">Nome:</label>
+            <input class="aluno" id="nomeAluno" type="text"> <br>
+            <label for="txtqa">Resposta questão 1:</label>
+            <input id="resp1" type="text"> <br>
+            <label for="txtqa">Resposta questão 2:</label>
+            <input id="resp2"type="text"> <br>
+            <label for="txtqa">Resposta questão 3:</label>
+            <input id="resp3" type="text"> <br>
+            <label for="txtqa">Resposta questão 4:</label>
+            <input id="resp4" type="text"> <br>
+            <label for="txtqa">Resposta questão 5:</label>
+            <input id="resp5" type="text"> <br>
+            <button id="aluno" onclick="inserir()"> Inserir</button> <br><br>
+            <button id="resposta" onclick="calcular()">Gerar resultado</button> <br><br>
+		  </section>
+
+		  <div id="res">
+        
+		  </div>
+
+        
+    </main>
+    <footer>Ciclo de Mentoria da PodCodar</footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
