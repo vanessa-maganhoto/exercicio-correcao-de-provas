@@ -1,71 +1,80 @@
 @charset 'UTF-8';
 
-@font-face {
-    font-family: 'Escolar';
-    src: url(fontes/TheStudentsTeacher-Regular.ttf) format('opentype');
-    font-weight: normal;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+
 
 :root{
     --font-padrao: Arial, Verdana, Helvetica, sans-serif;
-    --font-destque: 'Escolar', cursive;
+    --font-h1: 'Poiret One', cursive;
+    --font-h2: 'Roboto', sans-serif;
+    
 
-    --corbackbotao: #ebebeb;
-    --corborder: #58355e;
-    --corh1:#199CA4;
-    --corback: #d9cef5c0;
+    --cor-background: white;
+    --cor-backgound-header: #DEF2F7; 
+    --cor-hover:#3945ff;
+    --cor-buton: #0817ff;
+    --cor-h1: #261c3f;
+    --cor-h2: #1C0051;
+}
+
+*{
+    margin: 0px;
 }
 
 body{
-    background-color:var(--corback);
+    background-color:var(--cor-backgound-header);
+    margin: 0px;
 }
 header {
     
     text-align: center;
-    margin: auto;
-    font-family:var(--font-destque);
-    font-size: 2.5em;
-    height: 180px;
-    width: auto;
-    /*border: solid 1px black;*/
     
+    font-family:var(--font-h1);
+    color: var(--cor-h1);
+    font-size: 2.5em;
+    background-color: var(--cor-backgound-header);
+    height: 180px;
+    width: auto; 
 }
 
 header > h1 {
-    color: var(--corh1);
-    margin: 40px auto;
-    
+    color: var(--font-h1);
+    margin: -2px auto;
+    background-color: var(--cor-backgound-header);
+    text-align: center;
+    padding-top: 35px;
 }
 
 main{
     margin: 10px auto 30px auto;
-    border: solid 1px black;
+    /*border: solid 1px black;*/
     padding: 10px;
 }
+
 section{
     display:inline-block;
-    border: 1px solid black;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 1.1em;
-    
-    /*text-align: center;
-    margin-top: 50px;
-    height: 400px;
-    width: 300px;*/
-    
+    background-color: var(--cor-background);
+    font-size: 1.1em;  
+    padding: 10px;
+    margin: 0px 60px;
+    border-radius: 10px;
+    box-shadow:  0px 1px 5px rgba(128, 128, 128, 0.623);
 }
-/*section#cadGab > h2 {
-    margin: 0px;
-}*/
+
+
+section#nQ {
+    vertical-align: top; 
+}
 
 section#cadGab {
-    margin: 0px 150px;
     vertical-align: top;
 }
 
-section#cadAl {
-    margin: 0px 150px;
-}
+
 section#cadGab > div > input {
     background-color:var(--corbackbotao);
     border: solid 2px var(--corborder);
@@ -76,10 +85,144 @@ section#cadAl > div > input {
     border: solid 2px var(--corborder);
 }
 
-section#cadAl > h2 {
+h2 {
     text-align: center;
+    font-family: var(--font-h2);
+    color: var(--cor-h2);
+    font-size: 1.5em;
 }
 
-footer{
+label.cadQuestoes{
     text-align: center;
+    font-family: var(--font-padrao);
+    color: var(--cor-h2);
+    font-size: 1em;
+}
+input#nQuestoes{
+    width: 66px;
+    height: 15px;
+    border: 1px solid var(--cor-h2);
+}
+button#configuraQuestoes{
+    width:37px;
+    height: 25px;
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    color: var(--cor-backgound-header);
+    border: 2px solid var(--cor-buton);
+    background-color: var(--cor-buton);
+    border-radius: 5px;
+    margin: 8px 98px;
+}
+
+#configuraQuestoes:hover{
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-hover);
+}
+section#cadGab > div#formGabarito > input{
+    width: 66px;
+    height: 15px;
+    border: 1px solid var(--cor-h2);
+    margin: 3px;
+}
+
+section#cadGab > div#formGabarito > label{
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+    margin: auto;
+}
+
+button#salvar{
+    width:77px;
+    height: 30px;
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    color: var(--cor-backgound-header);
+    border: 2px solid var(--cor-buton);
+    background-color: var(--cor-buton);
+    border-radius: 5px;
+    margin: 11px 100px 20px 100px;
+}
+
+#salvar:hover{
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-hover);
+}
+
+/*nnnn*/
+
+section#cadAl > label{
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+    margin: auto;
+}
+input#nomeAluno{
+    width: 174px;
+    height: 15px;
+    border: 1px solid var(--cor-h2);
+    margin: 3px;
+}
+
+button#aluno{
+    width:77px;
+    height: 30px;
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    color: var(--cor-backgound-header);
+    border: 2px solid var(--cor-buton);
+    background-color: var(--cor-buton);
+    border-radius: 5px;
+    margin: 15px 100px 9px 100px;
+}
+
+#aluno:hover{
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-hover);
+}
+
+section#cadAl > div#formRespostas > label {
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    color: rgb(58, 58, 58);
+    margin: auto;
+}
+section#cadAl > div#formRespostas > input {
+    width: 66px;
+    height: 15px;
+    border: 1px solid var(--cor-h2);
+    margin: 3px;
+}
+
+
+
+button#resposta{
+    width: 88px;
+    height: 39px;
+    font-family: var(--font-padrao);
+    font-size: 0.8em;
+    color: var(--cor-backgound-header);
+    border: 2px solid var(--cor-buton);
+    background-color: var(--cor-buton);
+    border-radius: 5px;
+    margin: 11px 95px 8px 95px;
+}
+
+#resposta:hover{
+    background-color: var(--cor-hover);
+    border: 2px solid var(--cor-hover);
+}
+
+div#res{
+    text-align: center;
+    font-family: var(--font-padrao);
+    font-size: 0.9em;
+    color: var(--font-h1);
+    
+}
+    footer{
+    text-align: center;
+    background-color: var(--cor-backgound-header);
+    margin: 0px;
 }

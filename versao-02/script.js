@@ -86,7 +86,7 @@ function calcular (){
 
     for (let i=0; i<alunos.length; i++){
         console.log (`O número de acertos do aluno ${alunos[i]} foi ${acertos[i]}`)
-        res.innerHTML+= (`O número de acertos do aluno ${alunos[i]} foi ${acertos[i]} \n<br>`)
+        res.innerHTML+= (`O total de acertos de ${alunos[i]} é igual a ${acertos[i]}. \n<br>`)
     }
     alunos = []
     respAlunos = []

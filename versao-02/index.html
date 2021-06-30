@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Correção de provas</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1>Correção de provas</h1>
+        
+            <h1>Correção de Provas</h1>
+        
     </header>
 
     <main>
-        <section>
-            <label for="">Número de questões</label>
-            <input type="number" name="" id="nQuestoes">
-            <button onclick="configuraQuestoes()">ok</button>
+        <section id="nQ">
+            <label class="cadQuestoes"for="">Número de questões</label>
+            <input type="number" name="" id="nQuestoes"> <br>
+            <button id="configuraQuestoes" onclick="configuraQuestoes()">ok</button>
         </section>
 
         <section id="cadGab">
@@ -25,7 +28,7 @@
                 
             </div>
             
-				 <br> <br> <br>
+				 <br>
 				<button id="salvar" onclick="cadastrar()" >Cadastrar</button> <br>
 		  </section>
         
@@ -35,17 +38,17 @@
             <input id="nomeAluno" type="text"> <br>
             <div id="formRespostas"></div>
             
-            <button id="aluno" onclick="inserir()"> Inserir</button> <br><br>
-            <button id="resposta" onclick="calcular()">Gerar resultado</button> <br><br>
+            <button id="aluno" onclick="inserir()"> Inserir</button> <br>
+            <button id="resposta" onclick="calcular()">Gerar resultado</button> 
 		  </section>
 
 		  <div id="res">
-			  resposta
+			  
 		  </div>
 
         
     </main>
-    <footer>Ciclo de mentoria da PodCodar</footer>
+    <footer>Ciclo de Mentoria da PodCodar</footer>
 
     <script src="script.js"></script>
 </body>
